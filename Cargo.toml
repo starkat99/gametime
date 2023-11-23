@@ -1,8 +1,11 @@
-[package]
-name = "template"
-version = "0.0.1"
+[workspace]
+members = ["gametime-cli", "gametime", "gametime-web", "gametime-common"]
+default-members = ["gametime", "gametime-cli"]
+resolver = "2"
+
+[workspace.package]
 edition = "2021"
 license = "MIT OR Apache-2.0"
+version = "0.0.0"
+rust-version = "1.74"
 publish = false
-
-[dependencies]

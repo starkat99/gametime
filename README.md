@@ -1,4 +1,4 @@
-# Rust Template
+# Gametime
 
 ## License
 
