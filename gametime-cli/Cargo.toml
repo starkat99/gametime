@@ -4,9 +4,16 @@ version.workspace = true
 edition.workspace = true
 license.workspace = true
 rust-version.workspace = true
+description = "Command line tool for Gametime development"
+default-run = "gtc"
 publish = false
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+clap = { version = "4.4.8", features = ["derive", "env"] }
 gametime-common = { path = "../gametime-common" }
+
+[[bin]]
+name = "gtc"
+path = "src/main.rs"
